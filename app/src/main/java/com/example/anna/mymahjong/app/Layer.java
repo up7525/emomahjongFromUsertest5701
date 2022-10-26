@@ -5,10 +5,6 @@ import android.view.View;
 
 public class Layer {
     Tile[][] tiles;
-
-    public Layer(Tile[][] layer){
-        this.tiles = layer;
-    }
     public void initNeighborModel() {
         for (int i = 0; i < tiles.length; i++) {
             for (int j = 0; j < tiles[0].length - 1; j++) {
